@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Survey Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .survey-container {
+      max-width: 600px;
+      width: 100%;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+  </style>
+
+  <!-- START Formbricks Surveys -->
+  <script type="text/javascript">
+  !function(){
+    var t=document.createElement("script");
+    t.type="text/javascript",t.async=!0,
+    t.src="https://app.formbricks.com/js/formbricks.umd.cjs",
+    t.onload=function(){
+      if(window.formbricks){
+        window.formbricks.setup({
+          environmentId:"cmfl6kum206unwy01xlaf7l16",  // your environment ID
+          appUrl:"https://app.formbricks.com"
+        });
+      } else {
+        console.error("Formbricks library failed to load properly.");
+      }
+    };
+    var e=document.getElementsByTagName("script")[0];
+    e.parentNode.insertBefore(t,e)
+  }();
+  </script>
+  <!-- END Formbricks Surveys -->
+</head>
+<body>
+  <div class="survey-container">
+    <h1>We Value Your Feedback</h1>
+    <p>Please take a minute to complete this short survey.</p>
+    <p>Thank you</p>
+    <!-- Formbricks will automatically inject the survey widget when conditions match -->
+  </div>
+</body>
+</html>
